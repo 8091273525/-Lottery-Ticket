@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #271c35;
+  line-height: 1.6;
+  font-family: 'outfit';
+  background: linear-gradient(#ffdad5, #fff7f9);
+  overflow-x: hidden;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.bamer {
+  width: 100%;
+  height: 240vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(IMG-20250207-WA0002.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+@media only screen and (min-width: 768px) {
+  .bamer {
+      height: 240vh;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bamer {
+      height: 163vh;
+  }
+}
+
+.nev {
+  width: 100%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nev ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.nev ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nev ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #e09823;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.nev ul li:hover::after {
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  display: flex;
+  color: seashell;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.hero h1 {
+  font-size: 2.55rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.hero .btn {
+  background-color: #e09823;
+  color: white;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #d35400;
+}
+
+.line {
+  text-align: left;
+}
+
+.six span {
+	color: #ffffff;
+	opacity: 0;
+	transform: rotate(-180deg) translate(150px, 0);
+	animation: twister .5s forwards;
+}
+
+
+@keyframes twister {
+	10% {
+		opacity: 1;
+	}
+	100% {
+		transform: rotate(0deg) translate(0);
+		opacity: 1;
+	}
+}
+
+
+.animate {
+	font-size: 50px;
+	margin: 100px 0 0;
+	border-bottom: 2px solid #ccc;
+}
+
+.animate span {
+	display: inline-block;
+}
+
+
+.animate span:nth-of-type(2) {
+	animation-delay: .05s;
+}
+.animate span:nth-of-type(3) {
+	animation-delay: .1s;
+}
+.animate span:nth-of-type(4) {
+	animation-delay: .15s;
+}
+.animate span:nth-of-type(5) {
+	animation-delay: .2s;
+}
+.animate span:nth-of-type(6) {
+	animation-delay: .25s;
+}
+.animate span:nth-of-type(7) {
+	animation-delay: .3s;
+}
+.animate span:nth-of-type(8) {
+	animation-delay: .35s;
+}
+.animate span:nth-of-type(9) {
+	animation-delay: .4s;
+}
+.animate span:nth-of-type(10) {
+	animation-delay: .45s;
+}
+.animate span:nth-of-type(11) {
+	animation-delay: .5s;
+}
+.animate span:nth-of-type(12) {
+	animation-delay: .55s;
+}
+.animate span:nth-of-type(13) {
+	animation-delay: .6s;
+}
+.animate span:nth-of-type(14) {
+	animation-delay: .65s;
+}
+.animate span:nth-of-type(15) {
+	animation-delay: .7s;
+}
+.animate span:nth-of-type(16) {
+	animation-delay: .75s;
+}
+.animate span:nth-of-type(17) {
+	animation-delay: .8s;
+}
+.animate span:nth-of-type(18) {
+	animation-delay: .85s;
+}
+.animate span:nth-of-type(19) {
+	animation-delay: .9s;
+}
+.animate span:nth-of-type(20) {
+	animation-delay: .95s;
+}
+
+.footer {
+  padding: 20px;
+  background-color: #242222;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+a {
+  color: #fff;
+}
+
+.contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.contact-left-title h2 {
+  font-weight: 600;
+  color: #a363aa;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #a363aa;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-inputs {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+}
+
+.contact-left textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.contact-inputs:focus {
+  border: 2px solid #ff994f;
+}
+
+.contact-inputs::placeholder {
+  color: #a9a9a9;
+}
+
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg, #ff994f, #fa6d86);
+  cursor: pointer;
+}
+
+.contact-left button img {
+  height: 15px;
+}
+
+.contact-right img {
+  width: 500px;
+  margin: 20px;
+}
+
+@media (max-width:800px) {
+
+  .contact-inputs {
+      width: 80vw;
+  }
+
+  .contact-right {
+      display: none;
+  }
+}
+
+.about {
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-content h3 {
+  margin-top: 20px;
+  color: #333;
+}
+
+.about-content p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.about-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-content li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.about-content i {
+  color: #27ae60;
+  margin-right: 10px;
+}
+
+
+
+/* Table CSS - Improved for responsiveness */
+.table-container {
+  overflow-x: auto; /* Enables horizontal scrolling */
+  width: 100%; /* Ensures table takes full width of container */
+}
+
+table {
+  width: 100%; /* Ensures table takes full width of container */
+  border-collapse: collapse; /* Collapses borders for a cleaner look */
+  table-layout: fixed; /* Important: This makes columns widths consistent */
+  margin: 20px 0; /* Adds margin top and bottom*/
+}
+
+th, td {
+  border: 1px solid #000000;
+  padding: 10px;
+  text-align: center;
+  word-wrap: break-word; /* Prevents long words from overflowing */
+  overflow-wrap: break-word; /* For older browsers */
+}
+
+th {
+  background-color: #1e8449;
+}
+
+.table tbody tr.row {
+  font-weight: bold;
+  background-color: #009879;
+}
+
+/* Media query for smaller screens (e.g., mobile) */
+@media (max-width: 768px) {
+  table {
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  th, td {
+      padding: 8px; /* Adjust padding for smaller screens */
+  }
+}
+
+
+
+h3 {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.55rem;
+  margin-bottom: 15px;
+} /* CORRECT */
+
+.my-class {
+  width: 200px; /* CORRECT */
+}
+.result{
+  background: #fff;
+}
+h1{
+  text-align: center;
+  font-size: 10vmin;
+}

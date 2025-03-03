@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+.bamer {
+  width: 100%;
+  height: 240vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(IMG-20250207-WA0002.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+
+@media only screen and (min-width: 768px) {
+  .bamer {
+      height: 240vh;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .bamer {
+      height: 163vh;
+  }
+}
+.nev {
+  width: 100%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nev ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.nev ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nev ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #e09823;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.nev ul li:hover::after {
+  width: 100%;
+}
+
+.hero {
+   /* yaa line box ha a home page ka */
+   width: 100%;
+   background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),url(IMG-20250207-WA0002.jpg);
+   background-position: bottom;
+   display: flex;
+   color: rgb(75, 71, 71);
+   flex-direction: column;
+   text-align: center;
+   padding: 10px;
+}
+
+.hero h1 {
+  font-size: 2.55rem;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.hero p {
+  font-size: 0.827rem;
+  margin-bottom: 25px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.hero .btn {
+  background-color: #e09823;
+  color: white;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+  background-color: #d35400;
+}
+.footer {
+  padding: 20px;
+  background-color: #242222;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+a
+{
+  color: #fff;
+}
+p{
+  margin: 30px;
+}

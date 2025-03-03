@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f5f5f5;
+  color: #271c35;
+  line-height: 1.6;
+  font-family: 'outfit';
+  background: linear-gradient(#ffdad5, #fff7f9);
+  overflow-x: hidden;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+html,body{
+    overflow-x: hidden;
+    width: 100%;
+  }
+  .nev
+  {
+  width: 100%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+  .nev ul li
+  {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  }
+  .nev ul li a
+  {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  }
+  .nev ul li::after
+  {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #e09823;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+  }
+  .nev ul li:hover::after
+  {
+  width: 100%;
+  }
+  
+.bamer {
+  width: 100%;
+  height: 375vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(IMG-20250207-WA0002.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+h3
+{
+  font-size: 7vmin;
+}
+
+/* लैपटॉप के लिए */
+@media only screen and (min-width: 768px) {
+  .bamer {
+    height: 375vh;
+  }
+}
+
+/* मोबाइल के लिए */
+@media only screen and (max-width: 767px) {
+  .bamer {
+    height: 365vh;
+    /* आप अपनी आवश्यकता के अनुसार हाइट बदल सकते हैं */
+  }
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 10px;
+}
+
+.nev {
+  width: 100%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nev ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.nev ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nev ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #e09823;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.nev ul li:hover::after {
+  width: 100%;
+}
+
+.hero {
+  /* yaa line box ha a home page ka */
+  width: 100%;
+  display: flex;
+  color: seashell;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.hero h1 {
+  font-size: 2.55rem;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.contact {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.contact-left-title h2 {
+  font-weight: 600;
+  color: #a363aa;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+.contact-left-title hr {
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #a363aa;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.contact-inputs {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: #666;
+  border-radius: 50px;
+}
+
+.contact-left textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.contact-inputs:focus {
+  border: 2px solid #ff994f;
+}
+
+.contact-inputs::placeholder {
+  color: #a9a9a9;
+}
+
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg, #ff994f, #fa6d86);
+  cursor: pointer;
+}
+
+.contact-left button img {
+  height: 15px;
+}
+
+.contact-right img {
+  width: 500px;
+  margin: 20px;
+}
+
+@media (max-width: 800px) {
+  .contact-inputs {
+    width: 80vw;
+  }
+  .contact-right {
+    display: none;
+  }
+}
+.footer {
+  padding: 20px;
+  background-color: #242222;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+a{
+  color: #fff;
+}
